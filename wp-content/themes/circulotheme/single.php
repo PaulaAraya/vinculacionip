@@ -33,11 +33,15 @@
 				<div class="place">
 					<p class="sede"><span class="fa fa-map-marker"></span> Sede <?php echo get_field('sede',$post->ID); ?></p>
 				</div>
+
 			</div>
 
 			<div class="col-md-8 col-sm-9">
 				<?php echo apply_filters('the_content' , $post->post_content)?>
+				<?php echo get_field('tabla_convenio') ?>
 			</div>
+
+			<div class="clear separator"></div>
 
 			<div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2 col-xs-12 share-article">
 

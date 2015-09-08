@@ -277,6 +277,8 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 .carousel-indicators .active {width: 12px; height: 12px; margin: 5px 14px; background-color: #ff9900;
 }
 
+.heading-single .jumbotron ul {display: none; }
+
 /* OFERTAS LABORALES */
 .offer, .tips {padding-top: 35px; }
 .offer h2{font-size:45px; font-family:'proxima nova';color:#0067b1; text-align:left; margin-bottom: 40px; text-transform: capitalize; font-weight: 700;}
@@ -317,11 +319,13 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 
 .convenio-element.side {background: #ffffff; padding: 5px 15px; margin-bottom: 25px; display: block; height: 135px; }
 .convenio-element img{float: left;}
-.convenio-element h3{padding-left: 35%;text-align: left; line-height: 1.3em; font-size: 20px; margin-top: 5px; height: 45px;}
+.convenio-element h3{padding-left: 28%;text-align: left; line-height: 1.3em; font-size: 20px; margin-top: 5px; height: 45px;}
 .convenio-element h3 a{padding-left: 0;font-weight:500;color:#1598ed; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-size: 20px;}
 .convenio-element h3 a:hover{color: #0067b1; text-decoration: none; font-size: 20px;}
-.convenio-element p{padding-left: 35%;color:#a2a2a2; text-align: left; line-height: 1.3em; font-size: 14px; margin-bottom: 0;}
-.convenio-element a{padding-left: 3%;font-weight: 700;color:#ff9900; font-family: 'proxima nova'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.convenio-element p{padding-left: 28%;color:#a2a2a2; text-align: left; line-height: 1.3em; font-size: 14px; margin-bottom: 0;}
+/*.convenio-element ul{display:none;}*/
+.convenio-element li {padding-left: 28%; color: #a2a2a2; text-align: left; line-height: 1.3em; font-size: 14px; margin-bottom: 0; }
+.convenio-element a{padding-left: 7%;font-weight: 700;color:#ff9900; font-family: 'proxima nova'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .convenio-element a:hover{color:#b36b00; text-decoration: none;}
 
 /* NOTICIAS */
@@ -512,7 +516,7 @@ figcaption.transparent {background: rgba(52, 56, 56, .8); color: #fff; position:
 .act-date .principales span.day,.act-date span.day{font-size: 28px !important; font-weight: 700; padding-top: 0;}
 .act-date .principales span.month, .act-date span.month{font-size: 12px !important; font-weight: 500;}
 /* Columna Iniciales */
-figure.principales {max-height: 440px; }
+figure.principales {max-height: 440px; z-index: 50;}
 .actividades .principales img {width: 100%; }
 .actividades .principales figcaption{background: #fff; padding: 15px 15px 20px;}
 .actividades .principales p {clear: both; }
@@ -578,6 +582,8 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
 .single-content .share-article ul{float:left;}
 .single-content .share-article p{float:left; padding: 15px 10px 15px 0;}
 .single-content p{color: #676767; font-size: 14px; line-height: 1.6em; font-weight: 400; padding-bottom: 6px;}
+
+.single-content li{list-style: none;}
 
 .place {position: relative; top: 50px; left: 15px; text-align: right; }
 

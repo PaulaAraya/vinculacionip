@@ -16,7 +16,7 @@
                     </span>
                     <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
                     <p class="sede"><span class="fa fa-map-marker"></span> Sede <?php echo get_field('sede',$post->ID); ?></p>
-                    <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                    <a href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
                     <div class="clear"></div>
                 </figcaption>
             </figure>
@@ -29,7 +29,7 @@
                     </span>
                     <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
                     <p class="sede"><span class="fa fa-map-marker"></span> Sede <?php echo get_field('sede',$post->ID); ?></p>
-                    <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver info <i class="fa fa-arrow-right"></i></a>
+                    <a href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver info <i class="fa fa-arrow-right"></i></a>
                     <div class="clear"></div>
                 </figcaption>
             </figure>
@@ -68,7 +68,7 @@
 	                <span>
 	                    <?php echo the_time('j') ?> de <?php echo the_time('F, Y')?>
 	                </span>
-	                <a class="vermas" href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+	                <a class="vermas" href="<?php echo get_permalink($social->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
 	                <div class="clear"></div>
                 </figcaption>
 	        </figure>
@@ -80,7 +80,7 @@
                     <span>
                         <?php echo the_time('j') ?> de <?php echo the_time('F, Y')?>
                     </span>
-                    <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver info <i class="fa fa-arrow-right"></i></a>
+                    <a href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver info <i class="fa fa-arrow-right"></i></a>
                     <div class="clear"></div>
                 </figcaption>
             </figure>

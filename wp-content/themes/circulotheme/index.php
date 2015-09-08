@@ -82,16 +82,16 @@
                 <div class="tip-element"> 
                     <div class="tip-element side">
                         <h3>
-                        <a href="<?php the_permalink();?>" title="<?php echo $tip->post_title ?>"  rel="nofollow"><?php echo $tip->post_title ?></a>
+                        <a href="<?php echo get_permalink($tip->ID);?>" title="<?php echo $tip->post_title ?>"  rel="nofollow"><?php echo $tip->post_title ?></a>
                         </h3>
                         <p><?php echo substr($tip->post_content , 0, 147)?>...</p>
-                        <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
+                        <a href="<?php echo get_permalink($tip->ID);?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>       
                 <?php endforeach?>
                 
-                <a class="acc" href="<?php echo get_page_link()?>">Ver Ofertas Laborales</a>
+                
 
         </div>
     </div>
@@ -112,12 +112,12 @@
                     <figure class="convenio-element col-md-6 col-sm-6 col-xs-12"> 
                         <?php echo get_the_post_thumbnail( $convenio->ID , 'convenios', array('class' => 'img-responsive')) ?>
                         <figcaption class="convenio-element side">
-                            
                             <h3>
-                            <a href="<?php the_permalink();?>" title="<?php echo $convenio->post_title ?>"  rel="nofollow"><?php echo $convenio->post_title ?></a>
+                                <a href="<?php echo get_permalink($convenio->ID);?>" title="<?php echo $convenio->post_title ?>"  rel="nofollow"><?php echo $convenio->post_title ?></a>
                             </h3>
-                            <p><?php echo substr($convenio->post_content , 0, 65)?>...</p>
-                            <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
+                            <p><?php echo substr($convenio->post_excerpt , 0, 50)?>...</p>
+                            <div></div>
+                            <a href="<?php echo get_permalink($convenio->ID);?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
                             </a>
                         </figcaption>
                     </figure>       
@@ -193,11 +193,10 @@
                             <a class="heading" href="<?php echo get_permalink($actividad->ID)?>"><?php echo get_the_post_thumbnail($actividad->ID , 'homesocial' , array('class' => 'img-responsive'))?></a>
                             <figcaption>
                                 <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
-                                <p><?php echo substr($actividad->post_content , 0, 65)?>...</p>
                                 <span>
                                     <?php echo the_time('j') ?> de <?php echo the_time('F, Y')?>
                                 </span>
-                                <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                                <a href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
                                 <div class="clear"></div>
                             </figcaption>
                         </figure>
@@ -211,7 +210,7 @@
                                         </div>
                                         <div class="col-md-9 col-sm-10 col-xs-10 dotted-brd">
                                             <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
-                                            <p><?php echo substr($convenio->post_content , 0, 64)?>...</p>
+                                            <p><?php echo substr($actividad->post_content , 0, 64)?>...</p>
                                         </div>
                                         <div class="clear"></div>
                                     </div>
@@ -245,7 +244,7 @@
                                 <span>
                                     <?php echo the_time('j') ?> de <?php echo the_time('F, Y')?>
                                 </span>
-                                <a class="vermas" href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                                <a class="vermas" href="<?php echo get_permalink($social->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
                                 <div class="clear"></div>
                             </figcaption>
                         </figure>
